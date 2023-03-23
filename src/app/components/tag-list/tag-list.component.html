@@ -1,0 +1,26 @@
+<mat-card class="card">
+    <form class="form">
+        <mat-form-field class="full-width" color="accent" >
+          <mat-label>Hash# </mat-label>
+          <input type="text"
+                 name="hashkey"
+                 placeholder="Search for # "
+                 aria-label="Hash tag "
+                 matInput
+                 [(ngModel)]="hashkey" >
+                 <button mat-icon-button  (click)="gethHash()" matSuffix ><mat-icon>search</mat-icon></button>     
+             
+           
+            
+           
+       
+          
+        </mat-form-field>
+       
+        
+      </form>
+      
+    </mat-card>
+    <br>
+
+<app-tag-card *ngFor="let  hashtag of hashtags" [hashtag]="hashtag" [hashtags]="hashtags">{{hashtag.id}}</app-tag-card>

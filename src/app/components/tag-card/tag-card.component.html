@@ -1,0 +1,62 @@
+<mat-card class="card">
+    <mat-card-title-group>
+
+        <mat-card-subtitle>
+            Post {{hashtag.id}} &nbsp;
+        </mat-card-subtitle>
+
+    </mat-card-title-group>
+    <mat-card-content>
+        <mat-divider inset></mat-divider>
+
+        <table>
+
+
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <span matPrefix> Caption : </span>
+                    <p class="style_caption">{{hashtag.caption}}</p>
+                    <span matPrefix>Link </span><a color="green"
+                        href={{hashtag.permalink}}>{{hashtag.permalink}}</a>
+                    <br>
+                    <img src="{{hashtag.media_url}}" width="460px"
+                        height="345px">
+
+                </td>
+
+
+            </tr>
+
+            <tr>
+                <td><mat-icon>thumb_up</mat-icon>{{hashtag.like_count}} </td>
+                <td><mat-icon>message</mat-icon> &nbsp;{{hashtag.comments_count}}</td>
+            </tr>
+
+        </table>
+        <br>
+        <br>
+        <mat-divider inset></mat-divider>
+
+        <mat-icon>alarm</mat-icon>{{hashtag.timestamp}}
+        <br>
+        <mat-icon>perm_media</mat-icon>&nbsp;{{hashtag.media_type}}
+
+
+
+
+
+
+       
+
+
+      
+        <mat-divider inset></mat-divider>
+      
+
+
+    </mat-card-content>
+</mat-card>
+<br>

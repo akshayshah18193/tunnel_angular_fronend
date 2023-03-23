@@ -1,0 +1,46 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.logo
+{
+  background-image: url('../../assets/images/boschLogo.png');
+  background-attachment: relative;
+  background-size: 40px;
+  height: 40px;
+  width:40px
+}
+  
+.brand-name{
+  color:#dc143c;
+}
+.header{
+    background-attachment: fixed;
+    background-image: url('../../assets/images/bosch.svg');
+    background-position: relative;
+    background-size: auto;
+}
+.toolbar-menu{
+    color:gray;
+    font-size: medium;
+}
+.example-container {
+    width: auto;
+    height:700px;
+    
+    
+  }
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color:gray;
+    font-size: small;
+   
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+    
+    background-color: 	#F8F8F8;
+  }

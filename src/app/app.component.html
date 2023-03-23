@@ -1,0 +1,71 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<div class="header"><br>
+  <mat-toolbar>
+    
+      <mat-icon class="logo"><img src="../assets/images/boschLogo.png"></mat-icon>
+  
+    <span class="brand-name">&nbsp;  BOSCH <span class="product-name">Chaadar</span></span>
+    <div class="toolbar-menu">
+      <span >&nbsp;  Home</span>
+      <span >&nbsp;  Blogs</span>
+      <span >&nbsp;  About</span>
+    
+    </div>
+    
+    <span class="example-spacer"></span>
+    <mat-icon fontIcon="search"></mat-icon>
+    <span class="toolbar-menu">&nbsp; Search</span>
+  
+  
+  </mat-toolbar>
+  <mat-drawer-container class="example-container">
+      <mat-drawer class="example-sidenav" mode="side" opened>
+          <button mat-button [routerLink]="['bosch/home']">
+              MY HOME
+            </button>
+             <br>
+             <br>
+             <button  mat-button [routerLink]="['bosch/digitalthread']">
+              MY DIGITAL THREAD
+            </button>
+            <br>
+            <br>
+             <button mat-button [routerLink]="['bosch/mystuff']" >
+              MY STUFF
+            </button>
+            <br>
+            <br>
+             <button mat-button [routerLink]="['bosch/searches']">
+              MY SEARCHES
+            </button>
+            <br>
+            <br>
+             <button mat-button [routerLink]="['bosch/configuration']">
+              MY CONFIGURATION
+            </button>
+    </mat-drawer>
+      <mat-drawer-content>
+         
+      <router-outlet></router-outlet>
+      </mat-drawer-content>
+    </mat-drawer-container>
+  </div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
